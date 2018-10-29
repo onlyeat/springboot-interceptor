@@ -12,9 +12,5 @@ public class BaseController {
         return "hello world";
     }
 
-    @RequestMapping("/get2")
-    public String get2(){
-        System.out.println("hello world!");
-        return "hello world";
-    }
+
 }
