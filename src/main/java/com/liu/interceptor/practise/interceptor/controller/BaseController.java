@@ -9,7 +9,7 @@ public class BaseController {
     @RequestMapping("/get")
     public String get(){
         System.out.println("hello world!");
-        return "hello world";
+        return "hello world ";
     }
 
 
