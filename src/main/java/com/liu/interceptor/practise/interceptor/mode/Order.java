@@ -1,22 +1,27 @@
 package com.liu.interceptor.practise.interceptor.mode;
 
-public class Order {
+import java.io.Serializable;
+
+public class Order implements Serializable {
+
+    private static final long serialVersionUID = 8637666705946966545L;
+
 
     private Long orderId;
 
-    private String orderName;
+    private transient String orderName;
 
     private CarDriver carDriver;
 
 
-    @Override
-    public String toString() {
-        return "Order{" +
-                "orderId=" + orderId +
-                ", orderName='" + orderName + '\'' +
-                ", carDriver=" + carDriver +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "Order{" +
+//                "orderId=" + orderId +
+//                ", orderName='" + orderName + '\'' +
+//                ", carDriver=" + carDriver +
+//                '}';
+//    }
 
     public Long getOrderId() {
         return orderId;
